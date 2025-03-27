@@ -247,7 +247,12 @@
                         <div class="card p-3">
                             <h5>SA İnovasyon - Yapay Zeka ile Duygu Analizi</h5>
                             <p>Staj (07.2024 - 08.2024)</p>
-                            <p>SA İnovasyon şirketinde yapay zeka ile duygu analizi projesinde ses ve metin etiketleme üzerine çalıştım...</p>
+                            <p>SA İNOVASYON şirketinde yapay zeka ile duygu analizi
+                                projesinde ses ve metin etiketleme üzerine çalıştım. Ham
+                                verileri temizleyip normalize ettikten sonra doğru
+                                etiketlerle sınıflandırma işlemleri gerçekleştirdim. Bu
+                                veriler, yapay zeka modellerinde eğitim ve test veri
+                                setleri olarak kullanıldı. </p>
                         </div>
                         <div class="card p-3">
                             <h5>Dijital Teknolojiler ve Yazılım Öğrenci Topluluğu</h5>
@@ -272,7 +277,7 @@
         .experience-wrapper {
             overflow-x: hidden;
             scroll-behavior: smooth;
-            white-space: nowrap;
+            white-space: normal;
             display: flex;
         }
         .experience-scroll {
@@ -308,10 +313,87 @@
         });
     </script>
 
-    
+        <!-- Yarışmalar Section -->
+ <!--  <section id="competitions" class="container py-5">
+        <div class="container">
+            <h2>Yarışmalar</h2>
+            <div class="competitions-container">
+                <button id="comp-prev" class="scroll-btn">
+                    <ion-icon name="chevron-back-outline"></ion-icon>
+                </button>
+                <div class="competitions-wrapper">
+                    <div class="competitions-scroll">
+                        <div class="card p-3">
+                            <h5>TÜBİTAK 2209-A Öğrenci Projesi</h5>
+                            <p>2025 () - Algoritma tabanlı problem çözme yarışması</p>
+                        </div>
+                        <div class="card p-3">
+                            <h5>Hackathon - Yapay Zeka ve Veri Bilimi</h5>
+                            <p>2023 - 48 saatlik yapay zeka odaklı hackathon yarışması</p>
+                        </div>
+                        <div class="card p-3">
+                            <h5>Teknofest Sağlıkta Yapay Zeka Yarışması </h5>
+                            <p>2024 - Bu proje, bilgisayarlı görü ve mamografi görüntülerini analiz ederek meme kanseri teşhisinde kullanılan yöntemleri geliştirmeyi amaçlar. Yapay zeka algoritmaları kullanılarak, mamografi görüntülerindeki anormallikleri tespit ederek erken teşhis imkanı sağlayan bir sistem geliştirilmesi planlanmıştır.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <button id="comp-next" class="scroll-btn">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .competitions-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .competitions-wrapper {
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+            white-space: normal;
+            display: flex;
+        }
+        .competitions-scroll {
+            display: flex;
+            gap: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .scroll-btn {
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+        .scroll-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+    </style>
+
+    <script>
+        const compScrollContainer = document.querySelector(".competitions-wrapper");
+        const compPrevButton = document.getElementById("comp-prev");
+        const compNextButton = document.getElementById("comp-next");
+        const compScrollAmount = 300;
+
+        compNextButton.addEventListener("click", () => {
+            compScrollContainer.scrollBy({ left: compScrollAmount, behavior: "smooth" });
+        });
+
+        compPrevButton.addEventListener("click", () => {
+            compScrollContainer.scrollBy({ left: -compScrollAmount, behavior: "smooth" });
+        });
+    </script>   -->
+
     
     <!-- Skills Section -->
-    <section id="skills" class="container py-5">
+    <section id="experience" class="container py-5">
         <h2>Beceriler</h2>
         <h5>Python, Django, Node.js, Java, C, Makine Öğrenmesi</h5>
     </section>
