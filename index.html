@@ -1,410 +1,328 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elif Nur Tekay - Portföy</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <style>
-        :root {
-            --primary-color: #4E54BF;
-            --secondary-color: #1D1340;
-            --accent-color: #D285F2;
-            --background-color: #140826;
-            --highlight-color: #D7F20C;
-        }
-        body {
-            background-color: var(--background-color);
-            color: white;
-        }
-        .navbar {
-            background-color: var(--primary-color) !important;
-        }
-        .hero {
-            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
-        }
-        .btn-outline-light {
-            border-color: var(--highlight-color);
-            color: var(--highlight-color);
-        }
-        .btn-outline-light:hover {
-            background-color: var(--highlight-color);
-            color: var(--secondary-color);
-        }
-        .bg-light {
-            background-color: var(--secondary-color) !important;
-        }
-        .card {
-            background-color: var(--primary-color);
-            color: white;
-        }
-        .bg-dark {
-            background-color: var(--secondary-color) !important;
-        }
-        
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Elif Nur Tekay | AI Researcher & Software Engineer</title>
+  <meta name="description" content="Elif Nur Tekay - AI Research & Software Engineering Portfolio" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
+
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Elif Nur Tekay</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">Hakkımda</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#education">Eğitim</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projeler</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#experience">Deneyimler</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Beceriler</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">İletişim</a></li>
-                </ul>
-            </div>
+  <!-- Top Glow -->
+  <div class="bg-glow"></div>
+
+  <!-- Navbar -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="brand__mark">&lt;AR/&gt;</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <a class="btn btn--ghost" href="assets/cv/Elif_Nur_Tekay_CV.pdf" target="_blank" rel="noopener">
+          Download CV
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile" id="mobileMenu" aria-hidden="true">
+      <div class="mobile__panel">
+        <a href="#about" class="mobile__link">About</a>
+        <a href="#projects" class="mobile__link">Projects</a>
+        <a href="#publications" class="mobile__link">Publications</a>
+        <a href="#skills" class="mobile__link">Skills</a>
+        <a href="#contact" class="mobile__link">Contact</a>
+        <a class="btn btn--primary mobile__btn" href="assets/cv/Elif_Nur_Tekay_CV.pdf" target="_blank" rel="noopener">
+          Download CV
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="top">
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__left">
+          <div class="kicker">WELCOME TO MY PORTFOLIO</div>
+          <h1 class="hero__title">Elif Nur Tekay</h1>
+          <div class="hero__subtitle">AI Researcher & Software Engineer</div>
+          <p class="hero__desc">
+            Malatya Turgut Özal Üniversitesi Yazılım Mühendisliği 4. sınıf öğrencisiyim.
+            Yapay zekâ, bilgisayarla görü ve veri analizine odaklanan akademik ve uygulamalı projeler yürütüyorum. 
+            
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#projects">View Projects</a>
+            <a class="btn btn--ghost" href="#contact">Get in Touch</a>
+          </div>
+
+          <div class="hero__meta">
+            <div class="pill">Computer Vision</div>
+            <div class="pill">Deep Learning</div>
+            <div class="pill">Data Analysis</div>
+            <div class="pill">Web Development</div>
+          </div>
         </div>
-    </nav>
-    
-    <!-- Hero Section -->
-    <header class="hero text-center text-white d-flex align-items-center justify-content-center" style="height: 100vh;">
-        <div>
-            <img src="fotograf.jpg" class="rounded-circle img-thumbnail" alt="Profil Fotoğrafı" width="250">
-            <h1 class="mt-3">Elif Nur Tekay</h1>
-            <h3 class="mt-3">Yazılım Mühendisliği</h3>
-            <p>Veri Analizi | Yapay Zeka | Web Geliştirme</p>
-            <div class="social-links mt-3">
-                <a href="https://drive.google.com/file/d/1wwdFwSU_qJBXSKxbwV0pdZoto8hzU_2a/view?usp=drive_link" target="_blank" class="btn btn-outline-light me-2">
-                    <i class="fas fa-file-pdf"></i> CV
-                </a>
-                <a href="https://github.com/elifnurtekay" target="_blank" class="btn btn-outline-light me-2">
-                    <ion-icon name="logo-github"></ion-icon> GitHub
-                </a>
-                <a href="https://www.linkedin.com/in/elif-nur-tekay-1b7914255/" target="_blank" class="btn btn-outline-light me-2">
-                    <ion-icon name="logo-linkedin"></ion-icon> LinkedIn
-                </a>
-                <a href="mailto:elifnurtekay29@gmail.com" class="btn btn-outline-light me-2">
-                    <ion-icon name="mail-outline"></ion-icon> Mail Gönder
-                </a>
-                <a href="tel:+905349323623" class="btn btn-outline-light">
-                    <ion-icon name="call-outline"></ion-icon> Ara
-                </a>
+
+        <div class="hero__right">
+          <div class="profile-card">
+            <div class="profile-card__imgWrap">
+              <img src="assets/img/profile.jpeg" alt="Elif Nur Tekay profile photo" />
             </div>
-        </div>
-    </header>
-    
-    <!-- About Section -->
-    <section id="about" class="container py-5">
-        <h2>Hakkımda</h2>
-        <p>Merhaba! Ben Elif Nur Tekay. Yazılım mühendisliği 3. sınıf öğrencisiyim. Veri analizi, yapay zeka ve web geliştirme alanlarında çalışıyorum ve kendimi bu konularda geliştirmeye devam ediyorum. Hedefim, yazılım dünyasında yenilikçi çözümler üreterek sürekli öğrenmeye ve gelişmeye devam etmek.</p>
-    </section>
-    
-    <!-- Education Section -->
-    <section id="education" class="bg-light py-5">
-        <div class="container">
-            <h2>Eğitim</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="card p-3">
-                        <h5>Malatya Turgut Özal Üniversitesi</h5>
-                        <p>Yazılım Mühendisliği (2022-2026)</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card p-3">
-                        <h5>Ankara Üniversitesi</h5>
-                        <p>Yazılım Mühendisliği - 6 Şubat Depremi Nedeniyle Özel Öğrenci (2023-2026)</p>
-                    </div>
-                </div>
+            <div class="profile-card__body">
+              <div class="profile-card__title">Academic Focus</div>
+              <div class="profile-card__sub">Software Engineering Student</div>
+              <div class="profile-card__sub">AI Research Enthusiast</div>
+
+              <div class="profile-card__links">
+                <a class="iconlink" href="mailto:elifnurtekay29@gmail.com" aria-label="Email">Email</a>
+                <a class="iconlink" href="https://linkedin.com/in/elif-nur-tekay" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+                <a class="iconlink" href="https://github.com/elifnurtekay" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <section id="projects" class="container py-5">
-        <h2>Projeler</h2>
-        <div class="projects-container">
-            <button id="prev" class="scroll-btn">
-                <ion-icon name="chevron-back-outline"></ion-icon>
-            </button>
-            <div class="projects-wrapper">
-                <div class="projects-scroll">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Öğrenci Yoklama Uygulaması</h5>
-                            <p class="card-text"> Python Django framework'ü ve sqlite3 veri tabanı kullanılarak geliştirilen web tabanlı bir yoklama alma sistemi.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Gerçek Zamanlı Mesajlaşma ve Arama Uygulaması</h5>
-                            <p class="card-text">Node.js, WebSocket ve WebRTC teknolojilerini kullanarak geliştirdiğimiz gerçek zamanlı bir mesajlaşma ve arama uygulamasıdır. MySQL tabanlı bir veritabanı ile çalışan sistem, anlık mesajlaşma için WebSocket, sesli ve görüntülü aramalar için ise WebRTC kullanmaktadır.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Melbourne Konut Piyasası Tahmin Eden Yapay Zeka Modeli</h5>
-                            <p class="card-text"> Melbourne Housing Market veri setini kullanarak, veri toplama ve gözlemleme, keşifsel veri analizi, model seçimi ve model değerlendirme adımlarını içeren bir çalışma gerçekleştirdik. Bu süreçler sonucunda, Melbourne konut piyasasını tahmin eden bir yapay zeka modeli geliştirdik.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Kütüphane Otomasyonu Web Uygulaması</h5>
-                            <p class="card-text"> Django ve MySQL veri tabanı kullanılarak geliştirilen web tabanlı bir kütüphane otomasyon sistemidir.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Akıllı Çalma Listesi Web Uygulaması</h5>
-                            <p class="card-text">Django, SQLite3 veritabanı ve bağlı liste (Linked List) kullanılarak, kullanıcı istekleri doğrultusunda çalma listesi oluşturan bir uygulamadır. </p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Rastgele Graf Oluşturma Uygulaması</h5>
-                            <p class="card-text">Erdős–Rényi algoritması kullanılarak JavaScript ile geliştirilen bir uygulamadır.</p>
-                        </div>
-                    </div>
-                </div>
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__head">
+          <h2>About Me</h2>
+          <div class="underline"></div>
+        </div>
+
+        <div class="about__grid">
+          <div class="card card--soft">
+            <p>
+              Python, Django, Node.js, React, MySQL ve MongoDB gibi teknolojilerle web uygulamaları geliştirme deneyimine sahibim.
+              Araştırma yönelimli çalışma disiplinini, mühendislik çözümlerinde analitik düşünmeyi ve ekip içinde etkin iş birliğini ön planda tutuyorum.
+            </p>
+
+            <div class="tags">
+              <span class="tag">Artificial Intelligence</span>
+              <span class="tag">Computer Vision</span>
+              <span class="tag">Deep Learning</span>
+              <span class="tag">Data Analysis</span>
             </div>
-            <button id="next" class="scroll-btn">
-                <ion-icon name="chevron-forward-outline"></ion-icon>
-            </button>
-        </div>
-    </section>
-    
-    <style>
-    .projects-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-    }
-    .projects-wrapper {
-        overflow-x: hidden; /* Yatay kaydırmayı aktif et */
-        scroll-behavior: smooth; /* Daha yumuşak kaydırma */
-        white-space: normal; /*pre-wrap;  Kartların alt satıra kaymasını engelle */
-        display: flex;
-    }
-    .projects-scroll {
-        display: flex;
-        gap: 20px;
-        transition: transform 0.3s ease-in-out;
-    }
-    .card {
-        min-width: 250px;
-        background-color: var(--primary-color);
-        color: white;
-        padding: 15px;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-    .scroll-btn {
-        background: rgba(0, 0, 0, 0.5);
-        color: white;
-        border: none;
-        padding: 10px;
-        cursor: pointer;
-        border-radius: 50%;
-    }
-    .scroll-btn:hover {
-        background: rgba(255, 255, 255, 0.3);
-    }
-    </style>
-    
-    <script>
-        const scrollContainer = document.querySelector(".projects-wrapper");
-        const prevButton = document.getElementById("prev");
-        const nextButton = document.getElementById("next");
-        const scrollAmount = 300;
+          </div>
 
-        nextButton.addEventListener("click", () => {
-            scrollContainer.scrollBy({ left: scrollAmount, behavior: "smooth" });
-        });
+          <div class="card card--gradient">
+            <div class="about__right">
+              <div class="about__cap">Education</div>
+              <div class="about__item">
+                <div class="about__title">Malatya Turgut Özal University</div>
+                <div class="about__muted">Software Engineering (B.Sc.) — 2022–Present</div>
+              </div>
 
-        prevButton.addEventListener("click", () => {
-            scrollContainer.scrollBy({ left: -scrollAmount, behavior: "smooth" });
-        });
+              <div class="about__item">
+                <div class="about__title">Ankara University</div>
+                <div class="about__muted">Software Engineering (6 Feb Earthquake) — 2023–2025</div>
+              </div>
 
-    </script>
-    
-    
+              <div class="about__item">
+                <div class="about__muted">GPA: 3.30 — 4th year</div>
+              </div>
 
-    <!-- Experience Section -->
-    <section id="experience" class="bg-light py-5">
-        <div class="container">
-            <h2>Deneyimler</h2>
-            <div class="experience-container">
-                <button id="exp-prev" class="scroll-btn">
-                    <ion-icon name="chevron-back-outline"></ion-icon>
-                </button>
-                <div class="experience-wrapper">
-                    <div class="experience-scroll">
-                        <div class="card p-3">
-                            <h5>Yazılım ve Teknoloji Topluluğu</h5>
-                            <p>Denetim Kurulu Üyesi (10.2022 - 09.2023)</p>
-                        </div>
-                        <div class="card p-3">
-                            <h5>SA İnovasyon - Yapay Zeka ile Duygu Analizi</h5>
-                            <p>Staj (07.2024 - 08.2024)</p>
-                            <p>SA İNOVASYON şirketinde yapay zeka ile duygu analizi
-                                projesinde ses ve metin etiketleme üzerine çalıştım. Ham
-                                verileri temizleyip normalize ettikten sonra doğru
-                                etiketlerle sınıflandırma işlemleri gerçekleştirdim. Bu
-                                veriler, yapay zeka modellerinde eğitim ve test veri
-                                setleri olarak kullanıldı. </p>
-                        </div>
-                        <div class="card p-3">
-                            <h5>Dijital Teknolojiler ve Yazılım Öğrenci Topluluğu</h5>
-                            <p>Yönetim Kurulu Başkan Yardımcılığı (02.2025 -  )</p>
-                        </div>
-                    </div>
-                </div>
-                <button id="exp-next" class="scroll-btn">
-                    <ion-icon name="chevron-forward-outline"></ion-icon>
-                </button>
+              <div class="divider"></div>
+
+              <div class="about__cap">Experience</div>
+              <ul class="list">
+                <li>
+                  <b>TÜBİTAK SAGE</b> — Intern (07.2025–08.2025): Super-resolution on large-scale satellite imagery; model research, fine-tuning, stitching, optimization.
+                </li>
+                <li>
+                  <b>Ankara University Project Support Office (PDO)</b> — Part-time student employee (03.2025–06.2025): Website responsibility in the Research Projects Support Office.
+            
+                </li>
+                <li>
+                  <b>SA İNOVASYON</b> — Intern (07.2024–08.2024): Speech & text labeling for sentiment analysis; data cleaning, normalization, classification for AI training/testing.
+                
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
+
+        <div class="about__cv">
+          <a class="btn btn--primary" href="assets/cv/Elif_Nur_Tekay_CV.pdf" target="_blank" rel="noopener">Open CV (PDF)</a>
+        </div>
+      </div>
     </section>
 
-    <style>
-        .experience-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-        }
-        .experience-wrapper {
-            overflow-x: hidden;
-            scroll-behavior: smooth;
-            white-space: normal;
-            display: flex;
-        }
-        .experience-scroll {
-            display: flex;
-            gap: 20px;
-            transition: transform 0.3s ease-in-out;
-        }
-        .scroll-btn {
-            background: rgba(0, 0, 0, 0.5);
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-            border-radius: 50%;
-        }
-        .scroll-btn:hover {
-            background: rgba(255, 255, 255, 0.3);
-        }
-    </style>
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section__head">
+          <h2>Featured Projects</h2>
+          <div class="underline"></div>
+        </div>
 
-    <script>
-        const expScrollContainer = document.querySelector(".experience-wrapper");
-        const expPrevButton = document.getElementById("exp-prev");
-        const expNextButton = document.getElementById("exp-next");
-        const expScrollAmount = 300;
+        <div class="projects__toolbar">
+          <input id="projectSearch" class="input" type="text" placeholder="Search projects (e.g., RL, YOLO, Django)..." />
+          <div class="filters" id="projectFilters"></div>
+        </div>
 
-        expNextButton.addEventListener("click", () => {
-            expScrollContainer.scrollBy({ left: expScrollAmount, behavior: "smooth" });
-        });
+        <div class="grid" id="projectsGrid">
+          <!-- JS renders cards -->
+        </div>
+      </div>
+    </section>
 
-        expPrevButton.addEventListener("click", () => {
-            expScrollContainer.scrollBy({ left: -expScrollAmount, behavior: "smooth" });
-        });
-    </script>
+    <!-- Publications -->
+    <section class="section" id="publications">
+      <div class="container">
+        <div class="section__head">
+          <h2>Publications & Research</h2>
+          <div class="underline"></div>
+        </div>
 
-        <!-- Yarışmalar Section -->
- <!--  <section id="competitions" class="container py-5">
-        <div class="container">
-            <h2>Yarışmalar</h2>
-            <div class="competitions-container">
-                <button id="comp-prev" class="scroll-btn">
-                    <ion-icon name="chevron-back-outline"></ion-icon>
-                </button>
-                <div class="competitions-wrapper">
-                    <div class="competitions-scroll">
-                        <div class="card p-3">
-                            <h5>TÜBİTAK 2209-A Öğrenci Projesi</h5>
-                            <p>2025 () - Algoritma tabanlı problem çözme yarışması</p>
-                        </div>
-                        <div class="card p-3">
-                            <h5>Hackathon - Yapay Zeka ve Veri Bilimi</h5>
-                            <p>2023 - 48 saatlik yapay zeka odaklı hackathon yarışması</p>
-                        </div>
-                        <div class="card p-3">
-                            <h5>Teknofest Sağlıkta Yapay Zeka Yarışması </h5>
-                            <p>2024 - Bu proje, bilgisayarlı görü ve mamografi görüntülerini analiz ederek meme kanseri teşhisinde kullanılan yöntemleri geliştirmeyi amaçlar. Yapay zeka algoritmaları kullanılarak, mamografi görüntülerindeki anormallikleri tespit ederek erken teşhis imkanı sağlayan bir sistem geliştirilmesi planlanmıştır.</p>
-                        </div>
-
-                    </div>
-                </div>
-                <button id="comp-next" class="scroll-btn">
-                    <ion-icon name="chevron-forward-outline"></ion-icon>
-                </button>
+        <div class="stack">
+          <article class="pub">
+            <div class="pub__title">Multimodal Feature Fusion for Video and Brand Memorability</div>
+            <div class="pub__meta">CEUR Workshop Proceedings — 2025</div>
+            <div class="pub__desc">
+              Video + brand memorability için multimodal özellik füzyonu yaklaşımı.
+              
             </div>
+          </article>
+
+          <article class="pub">
+            <div class="pub__title">Comparative Analysis of MLP and Vision Transformers for Video Memorability Classification</div>
+            <div class="pub__meta">UBMK 2025 — pp. 1076–1081 — DOI: 10.1109/UBMK67458.2025.11207010</div>
+            <div class="pub__desc">
+              Video memorability sınıflandırması için MLP ve ViT karşılaştırması.
+            
+            </div>
+          </article>
         </div>
+      </div>
     </section>
 
-    <style>
-        .competitions-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-        }
-        .competitions-wrapper {
-            overflow-x: hidden;
-            scroll-behavior: smooth;
-            white-space: normal;
-            display: flex;
-        }
-        .competitions-scroll {
-            display: flex;
-            gap: 20px;
-            transition: transform 0.3s ease-in-out;
-        }
-        .scroll-btn {
-            background: rgba(0, 0, 0, 0.5);
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-            border-radius: 50%;
-        }
-        .scroll-btn:hover {
-            background: rgba(255, 255, 255, 0.3);
-        }
-    </style>
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section__head">
+          <h2>Skills & Technologies</h2>
+          <div class="underline"></div>
+        </div>
 
-    <script>
-        const compScrollContainer = document.querySelector(".competitions-wrapper");
-        const compPrevButton = document.getElementById("comp-prev");
-        const compNextButton = document.getElementById("comp-next");
-        const compScrollAmount = 300;
+        <div class="skills__grid">
+          <div class="skill">
+            <div class="skill__top"><span>Python</span><span>Advanced</span></div>
+            <div class="bar"><div class="bar__fill" style="width: 92%"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill__top"><span>PyTorch</span><span>Advanced</span></div>
+            <div class="bar"><div class="bar__fill" style="width: 88%"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill__top"><span>TensorFlow</span><span>Intermediate+</span></div>
+            <div class="bar"><div class="bar__fill" style="width: 82%"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill__top"><span>Computer Vision</span><span>Advanced</span></div>
+            <div class="bar"><div class="bar__fill" style="width: 90%"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill__top"><span>Django</span><span>Advanced</span></div>
+            <div class="bar"><div class="bar__fill" style="width: 85%"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill__top"><span>React</span><span>Intermediate+</span></div>
+            <div class="bar"><div class="bar__fill" style="width: 80%"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill__top"><span>Node.js</span><span>Intermediate+</span></div>
+            <div class="bar"><div class="bar__fill" style="width: 78%"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill__top"><span>Data Analysis</span><span>Advanced</span></div>
+            <div class="bar"><div class="bar__fill" style="width: 88%"></div></div>
+          </div>
+        </div>
 
-        compNextButton.addEventListener("click", () => {
-            compScrollContainer.scrollBy({ left: compScrollAmount, behavior: "smooth" });
-        });
-
-        compPrevButton.addEventListener("click", () => {
-            compScrollContainer.scrollBy({ left: -compScrollAmount, behavior: "smooth" });
-        });
-    </script>   -->
-
-    
-    <!-- Skills Section -->
-    <section id="experience" class="container py-5">
-        <h2>Beceriler</h2>
-        <h5>Python, Django, Node.js, Java, C, Makine Öğrenmesi</h5>
+        <div class="note">
+          CV’de ayrıca: Java, PHP, MySQL, MongoDB, ML/DL, CV, GAN vb. yetkinlikler listeleniyor. 
+        </div>
+      </div>
     </section>
-    
-    <!-- Contact Section -->
-    <section id="contact" class="bg-dark text-white text-center py-4">
-        <h2>İletişim</h2>
-        <p><ion-icon name="mail-outline"></ion-icon> <a href="mailto:elifnurtekay29@gmail.com" class="text-white">elifnurtekay29@gmail.com</a></p>
-        <p><ion-icon name="call-outline"></ion-icon> <a href="tel:+905349323623" class="text-white">+90 534 932 36 23</a></p>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section__head">
+          <h2>Get In Touch</h2>
+          <div class="underline"></div>
+        </div>
+
+        <p class="center muted">Interested in collaboration or have a project in mind? Let’s connect.</p>
+
+        <div class="contact__grid">
+          <div class="contact__actions">
+            <a class="chip" href="mailto:elifnurtekay29@gmail.com">Email</a>
+            <a class="chip" href="tel:+905346946008">Phone</a>
+            <a class="chip" href="https://linkedin.com/in/elif-nur-tekay" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="chip" href="https://github.com/elifnurtekay" target="_blank" rel="noopener">GitHub</a>
+          </div>
+
+          <form class="form" id="contactForm">
+            <label>
+              <span>Name</span>
+              <input class="input" type="text" name="name" placeholder="Your name" required>
+            </label>
+
+            <label>
+              <span>Email</span>
+              <input class="input" type="email" name="email" placeholder="you@example.com" required>
+            </label>
+
+            <label>
+              <span>Message</span>
+              <textarea class="textarea" name="message" placeholder="Write your message..." required></textarea>
+            </label>
+
+            <button class="btn btn--primary btn--wide" type="submit">Send Message</button>
+            <div class="form__hint" id="formHint" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
     </section>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div>© <span id="year"></span> Elif Nur Tekay</div>
+        <div class="footer__links">
+          <a href="#top">Top</a>
+          <a href="assets/cv/Elif_Nur_Tekay_CV.pdf" target="_blank" rel="noopener">CV</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <script src="script.js"></script>
+
 </body>
 </html>
