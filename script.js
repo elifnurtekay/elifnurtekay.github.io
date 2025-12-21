@@ -41,7 +41,7 @@ const projects = [
       "Web tabanlı ajanda: Django + MongoDB backend; HTML/CSS/Bootstrap/JS frontend; takvim görünümü ve hatırlatıcılarla zaman yönetimi.",
     tags: ["Django", "MongoDB", "JavaScript", "Bootstrap"],
     category: "Web",
-    thumb: "assets/img/projects/agendax.jpg",
+    thumb: "assets/img/projects/agendax.png",
   },
   {
     title: "Student Attendance Web App",
@@ -49,7 +49,7 @@ const projects = [
       "Python Django framework ve sqlite3 veri tabanı ile geliştirilen web tabanlı yoklama alma sistemi.",
     tags: ["Django", "SQLite", "Web"],
     category: "Web",
-    thumb: "assets/img/projects/attendance.jpg",
+    thumb: "assets/img/projects/attendance.png",
   },
   {
     title: "Real-Time Messaging & Calling (WebSocket + WebRTC)",
@@ -57,7 +57,7 @@ const projects = [
       "Node.js, WebSocket ve WebRTC ile gerçek zamanlı mesajlaşma ve sesli/görüntülü arama; MySQL tabanlı altyapı.",
     tags: ["Node.js", "WebSocket", "WebRTC", "MySQL"],
     category: "Web",
-    thumb: "assets/img/projects/rtc.jpg",
+    thumb: "assets/img/projects/rtc.png",
   },
   {
     title: "Melbourne Housing Price Prediction (Data Science)",
