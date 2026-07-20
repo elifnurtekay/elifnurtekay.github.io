@@ -15,12 +15,13 @@ The production site is published from this repository through GitHub Pages at th
 
 ## Features
 
-- Centralized verified content in `data.js`
+- Centralized verified content in `data.js`, including project-to-publication, award, program, and related-project relationships
 - Project filters and accessible case-study dialog
 - Keyboard-accessible mobile navigation, visible focus styles, skip link, and Escape-enabled native dialog
 - System-aware theme with persisted manual override
 - SEO metadata, Open Graph tags, Person JSON-LD, `robots.txt`, and `sitemap.xml`
-- Local project screenshots where verified; intentionally labeled placeholders for missing visuals
+- EmailJS contact form restored from the repository’s previous verified implementation, with client-side validation, loading/error feedback, a honeypot field, and a direct-email fallback
+- Local project screenshots where verified; restrained covers and intentionally labeled placeholders for missing visuals
 
 ## Local development
 
@@ -43,7 +44,11 @@ All portfolio records are in `data.js`:
 - `projects`: cards, filters, case studies, availability labels, images, and technologies
 - `experience`, `publications`, `awards`, `skills`, `certificates`, and `highlights`: corresponding sections
 
-Add a project by creating one object that follows the existing project fields. Use `repository` only after the public URL has been verified. For non-public work, set a truthful `privacyStatus`. Do not duplicate project copy in `index.html`.
+Add a project by creating one object that follows the existing project fields. Use `relatedPublications`, `relatedAwards`, `relatedPrograms`, and `relatedProjects` to connect project outputs instead of creating duplicate cards. Use `repository` only after the public URL has been verified. For non-public work, set a truthful `privacyStatus`. Do not duplicate project copy in `index.html`.
+
+## Contact form
+
+The form uses the existing EmailJS public configuration recovered from Git history. It validates required fields in the browser, never reports success after a failed request, and offers a mailto fallback when the provider script or request is unavailable. The public configuration is required for browser-side EmailJS; do not add private credentials to this repository.
 
 ## Screenshots
 
