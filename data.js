@@ -1,26 +1,900 @@
 const portfolio = {
-  contact: { email: 'elifnurtekay29@gmail.com', emailJs: { publicKey: 'UVyr1L194MX0rjwDC', serviceId: 'portfolio', templateId: 'template_0d1k5b3' } },
-  highlights: [{ value: '3', label: 'academic publications' }, { value: 'Best Student Paper', label: 'INFUS 2026' }, { value: '2nd / 800 teams', label: 'Turkcell competition' }, { value: 'TUSAŞ LIFT UP', label: 'capstone project' }],
+  contact: {
+    email: "elifnurtekay29@gmail.com",
+    emailJs: {
+      publicKey: "UVyr1L194MX0rjwDC",
+      serviceId: "portfolio",
+      templateId: "template_0d1k5b3"
+    }
+  },
+
+  highlights: [
+    {
+      value: "4",
+      label: "academic publications"
+    },
+    {
+      value: "Best Student Paper",
+      label: "INFUS 2026"
+    },
+    {
+      value: "2nd / 800 teams",
+      label: "Turkcell competition"
+    },
+    {
+      value: "1st Place",
+      label: "AI & Data Science"
+    }
+  ],
+
   experience: [
-    { period: 'Aug 2024 – Present', role: 'Research Assistant', organization: 'ANLAM-NET Research LAB, Ankara University', description: 'Contributed to research activities spanning multimodal memorability analysis and AI engineering.' },
-    { period: 'Jul 2025 – Aug 2025', role: 'Artificial Intelligence Applications Unit Intern', organization: 'TÜBİTAK SAGE', description: 'Researched and fine-tuned super-resolution approaches for large-scale satellite imagery, including patch stitching and optimisation work.' },
-    { period: 'Mar 2025 – Jun 2025', role: 'Part-Time Student Employee', organization: 'Ankara University Project Support Office', description: 'Supported website responsibilities in the Research Projects Support Office.' },
-    { period: 'Jul 2024 – Aug 2024', role: 'Intern', organization: 'SA Innovation', description: 'Contributed to speech and text labelling, data cleaning, normalisation, and classification preparation for sentiment-analysis datasets.' }
+    {
+      period: "Aug 2024 – Present",
+      role: "Research Assistant",
+      organization: "ANLAM-NET Research LAB, Ankara University",
+      bullets: [
+        "Contribute to research on multimodal video and brand memorability prediction, including data preparation, model development, evaluation, and experimental analysis.",
+        "Contribute to technical documentation, academic publications, and competition-related research and presentation processes."
+      ]
+    },
+    {
+      period: "Jul 2025 – Aug 2025",
+      role: "Artificial Intelligence Applications Unit Intern",
+      organization: "TÜBİTAK SAGE",
+      bullets: [
+        "Researched and fine-tuned super-resolution approaches for large-scale satellite imagery.",
+        "Worked on patch-based image processing and stitching workflows to reconstruct high-resolution outputs from large satellite images."
+      ]
+    },
+    {
+      period: "Mar 2025 – Jun 2025",
+      role: "Part-Time Student Employee",
+      organization: "Ankara University Project Support Office",
+      bullets: [
+        "Maintained and updated institutional website pages and digital content."
+      ]
+    },
+    {
+      period: "Jul 2024 – Aug 2024",
+      role: "Data Annotation Intern",
+      organization: "SA Innovation",
+      bullets: [
+        "Labeled, cleaned, normalized, and organized speech and text data for sentiment-analysis studies.",
+        "Prepared datasets for classification by reviewing annotation quality and correcting inconsistent records."
+      ]
+    }
   ],
+
   projects: [
-    { id:'memovision', title:'MemoVision', subtitle:'Video and Brand Memorability Platform', categories:['Artificial Intelligence','Research'], status:'Completed', year:'2025–2026', summary:'Multimodal video and brand memorability prediction integrated into a working web interface.', overview:'A flagship research and competition project that brings memorability models into a user-facing prediction workflow.', challenge:'Make multimodal video and brand memorability prediction accessible through a clear interface.', contribution:'Contributed to model-to-interface integration and research/competition presentation.', approach:'Multimodal memorability prediction with a working web interface.', outputs:['Second place among 800 teams in Turkcell Yarının Teknoloji Liderleri.'], technologies:['Python','Deep Learning','Multimodal Learning','Web Interface'], relatedPublications:['ubmk-2025','mediaeval-2025'], relatedAwards:['turkcell-2026'], relatedPrograms:['TÜBİTAK 2209-A','Turkcell Yarının Teknoloji Liderleri'], relatedProjects:['mediaeval'], privacyStatus:'Research Project · Demo Not Publicly Available', featured:true, image:null, imageAlt:'MemoVision project cover', imageWidth:1600, imageHeight:1000 },
-    { id:'airfoil-rl', title:'Aerodynamic Shape Optimisation Using Reinforcement Learning', subtitle:'TUSAŞ LIFT UP Capstone Project', categories:['Artificial Intelligence','Research','Aerospace'], status:'Completed', year:'2025–2026', summary:'CST-based airfoil optimisation using reinforcement learning, surrogate models, aerodynamic validation, and a working web interface.', overview:'A capstone project that evaluates constrained aerodynamic shape optimisation and explains decisions made by trained reinforcement-learning policies.', challenge:'Optimise airfoil geometry while respecting aerodynamic and geometric constraints.', contribution:'Integrated outputs into a working web interface and used SHAP to analyse trained-policy decisions.', approach:'PPO, TD3, and SAC; CST-based geometry; hybrid surrogate models; XFOIL and NeuralFoil validation.', outputs:['INFUS 2026 Best Student Paper Award-winning work.','First place in Ankara University’s AI and Data Science category.'], technologies:['Python','PPO','TD3','SAC','XFOIL','NeuralFoil','SHAP'], relatedPublications:['infus-2026'], relatedAwards:['infus-2026','ankara-2026'], relatedPrograms:['TUSAŞ LIFT UP'], privacyStatus:'Academic Project · Demo Not Publicly Available', featured:true, image:null, imageAlt:'Airfoil reinforcement learning project cover', imageWidth:1600, imageHeight:1000 },
-    { id:'teknofest', title:'TEKNOFEST Aviation AI Competition', subtitle:'Aviation AI Competition Work', categories:['Artificial Intelligence','Computer Vision','Ongoing'], status:'Ongoing', year:'2026–Present', summary:'Collaborative Python-based integration and evaluation work for aviation object detection, tracking, and position-estimation tasks.', overview:'Ongoing competition work across three official tasks: UAV/helicopter detection and tracking, camera-based position estimation, and reference object detection.', challenge:'Build and validate reliable workflows for the competition’s three vision tasks.', contribution:'Contributed to model integration, inference/evaluation pipelines, output validation, performance analysis, and Git/GitHub collaboration.', approach:'Python-based model integration and validation; final selected methods are not publicly confirmed.', outputs:['Ongoing competition work.'], technologies:['Python','Computer Vision','Git','GitHub'], relatedProjects:['bap'], relatedPrograms:['TEKNOFEST Aviation AI Competition'], privacyStatus:'Private Repository · Ongoing Competition Work', featured:true, image:null, imageAlt:'TEKNOFEST aviation AI project cover', imageWidth:1600, imageHeight:1000 },
-    { id:'bap', title:'AI-Based Image Perception, Processing, Tracking, and Position Estimation System for Autonomous Aerial Vehicles', subtitle:'Ankara University BAP Project', categories:['Artificial Intelligence','Computer Vision','Research','Ongoing'], status:'Ongoing', year:'Ongoing', summary:'A distinct funded research project on image perception, processing, tracking, and camera-based position estimation for autonomous aerial vehicles.', overview:'Ongoing BAP research that shares an aerial-vision domain with TEKNOFEST while remaining a separate funded project.', challenge:'Develop visual processing workflows for autonomous aerial-vehicle contexts.', contribution:'Contributed to object detection, tracking, visual processing, and camera-based position-estimation work.', approach:'Computer vision and visual-processing engineering workflows.', outputs:['Ongoing funded research project.'], technologies:['Python','Computer Vision','Image Processing'], relatedProjects:['teknofest'], relatedPrograms:['Ankara University BAP'], privacyStatus:'Research Project · Demo Not Publicly Available', featured:true, image:null, imageAlt:'Autonomous aerial vehicles project cover', imageWidth:1600, imageHeight:1000 },
-    { id:'realtime', title:'Real-Time Messaging and Calling Application', subtitle:'Full-Stack Communication Application', categories:['Full Stack'], status:'Completed', year:'Date not verified', summary:'A database-backed web application for real-time messaging plus voice and video calls.', overview:'A full-stack communication project that demonstrates real-time backend and browser-media engineering.', challenge:'Support real-time messaging and calling in one web application.', contribution:'Built application workflows using Node.js, WebSocket, WebRTC, and MySQL.', approach:'WebSocket events, WebRTC media calling, and MySQL persistence.', outputs:['Working academic web project.'], technologies:['Node.js','WebSocket','WebRTC','MySQL'], relatedPublications:[], relatedAwards:[], relatedPrograms:[], privacyStatus:'Academic Project · Repository Status Not Verified', image:'assets/img/projects/rtc.png', imageAlt:'Real-time messaging and calling application interface', imageWidth:1536, imageHeight:864 },
-    { id:'project-management', title:'Project Management Application', subtitle:'Full-Stack Team Workflow Application', categories:['Full Stack'], status:'Completed', year:'Date not verified', summary:'A web application for task assignment, progress tracking, team management, and Gantt-chart visualisation.', overview:'A full-stack application supporting team workflow visibility.', challenge:'Bring task, team, and progress information into a clear workflow.', contribution:'Developed the Django, MongoDB, React, and CSS application.', approach:'Django and MongoDB backend paired with a React interface.', outputs:['Working academic web project.'], technologies:['Django','MongoDB','React','CSS'], relatedPublications:[], relatedAwards:[], relatedPrograms:[], privacyStatus:'Academic Project · Screenshot Not Available', image:null, imageAlt:'Project management application cover', imageWidth:1600, imageHeight:1000 },
-    { id:'attendance', title:'Student Attendance Application', subtitle:'Web-Based Attendance Management', categories:['Full Stack'], status:'Completed', year:'Date not verified', summary:'A Django and SQLite3 web-based attendance management system.', overview:'A focused web application for attendance-management workflows.', challenge:'Provide a simple web workflow for attendance management.', contribution:'Built the application using Python, Django, and SQLite3.', approach:'Python/Django web application with SQLite3 storage.', outputs:['Working academic web project.'], technologies:['Python','Django','SQLite3'], relatedPublications:[], relatedAwards:[], relatedPrograms:[], privacyStatus:'Academic Project · Repository Status Not Verified', image:'assets/img/projects/attendance.png', imageAlt:'Student attendance application interface', imageWidth:1536, imageHeight:864 },
-    { id:'agendax', title:'AjandaX', subtitle:'Event and Appointment Management System', categories:['Full Stack'], status:'Completed', year:'Date not verified', summary:'A calendar-based web system for creating and editing events and appointments with reminder-supported time management.', overview:'A full-stack scheduling application with calendar-centric workflows.', challenge:'Make appointments and events manageable in a single web interface.', contribution:'Developed event/edit flows and calendar-based viewing.', approach:'Django and MongoDB with HTML, CSS, Bootstrap, and JavaScript.', outputs:['Working academic web project.'], technologies:['Django','MongoDB','JavaScript','Bootstrap'], relatedPublications:[], relatedAwards:[], relatedPrograms:[], privacyStatus:'Academic Project · Repository Status Not Verified', image:'assets/img/projects/agendax.png', imageAlt:'AjandaX event and appointment management interface', imageWidth:1536, imageHeight:864 },
-    { id:'mediaeval', title:'Predicting Movie and Commercial Memorability', subtitle:'MediaEval 2025 Research Study', categories:['Research'], status:'Completed', year:'2025', summary:'A distinct MediaEval research study in the wider memorability research line.', overview:'A compact research-project entry related to MemoVision rather than a duplicate competition or publication card.', challenge:'Evaluate memorability prediction for movie and commercial media.', contribution:'Contributed to research and experimentation on multimedia memorability analysis.', approach:'Multimodal media analysis.', outputs:['Related MediaEval 2025 workshop output.'], technologies:['Machine Learning','Multimodal Learning'], relatedPublications:['mediaeval-2025'], relatedAwards:[], relatedPrograms:['MediaEval 2025'], relatedProjects:['memovision'], privacyStatus:'Research Project', image:null, imageAlt:'MediaEval memorability study cover', imageWidth:1600, imageHeight:1000 },
-    { id:'yazan-zeka', title:'Helicopter and UAV Object Detection + Visual Odometry', subtitle:'GMKA “Yazan Zeka” Mentorship Program', categories:['Computer Vision','Research'], status:'Completed', year:'Date not verified', summary:'A distinct mentorship-program project on helicopter/UAV object detection and visual odometry.', overview:'Computer-vision project work for aerial imagery in the GMKA “Yazan Zeka” Mentorship Program.', challenge:'Develop visual-understanding workflows for aerial imagery.', contribution:'Contributed to object-detection and visual-odometry project work.', approach:'Computer vision experimentation.', outputs:['GMKA “Yazan Zeka” Mentorship Program project.'], technologies:['Computer Vision','Object Detection','Visual Odometry'], relatedPublications:[], relatedAwards:[], relatedPrograms:['GMKA “Yazan Zeka” Mentorship Program'], privacyStatus:'Academic Project · Repository Status Not Verified', image:null, imageAlt:'Helicopter and UAV detection project cover', imageWidth:1600, imageHeight:1000 }
+    {
+      id: "memovision",
+      title: "MemoVision",
+      subtitle: "Video and Brand Memorability Platform",
+
+      categories: [
+        "Artificial Intelligence",
+        "Web Application",
+        "Research"
+      ],
+
+      status: "Completed",
+      year: "2025–2026",
+
+      summary:
+        "An AI-based platform developed to analyze video and brand memorability and present prediction results through a working web application.",
+
+      overview:
+        "MemoVision is an artificial intelligence platform focused on video and brand memorability analysis. It brings together applied research, experimental model development, and a working web application designed to present prediction results through an accessible user experience.",
+
+      challenge:
+        "Support the analysis and prediction of how memorable digital media content and its associated brand may be for viewers.",
+
+      contribution:
+        "Contributed to data preparation, model experimentation, evaluation, result analysis, technical documentation, academic publications, and the presentation of project outcomes in research and competition settings.",
+
+      approach:
+        "The project uses multimodal artificial intelligence methods to examine different forms of information in digital media. Detailed implementation, model configuration, and internal evaluation information are not publicly disclosed.",
+
+      outputs: [
+        "A working web-based platform for presenting video and brand memorability prediction results.",
+        "Second place among 800 teams in Turkcell Yarının Teknoloji Liderleri Competition.",
+        "Academic publications presented through IEEE UBMK, MediaEval 2025, and MediaEval 2026."
+      ],
+
+      technologies: [
+        "Artificial Intelligence",
+        "Multimodal Learning",
+        "Web Application",
+        "Model Evaluation"
+      ],
+
+      relatedPublications: [
+        "ubmk-2025",
+        "mediaeval-2025",
+        "mediaeval-2026"
+      ],
+
+      relatedAwards: [
+        "turkcell-2026"
+      ],
+
+      relatedPrograms: [
+        "TÜBİTAK 2209-A",
+        "Turkcell Yarının Teknoloji Liderleri"
+      ],
+
+      privacyStatus:
+        "Working application · Selected technical details restricted",
+
+      featured: true,
+
+      image: null,
+      imageAlt: "MemoVision project cover"
+    },
+
+    {
+      id: "airfoil-rl",
+
+      title:
+        "Aerodynamic Shape Optimisation Using Reinforcement Learning",
+
+      subtitle: "TUSAŞ LIFT UP Capstone Project",
+
+      categories: [
+        "Artificial Intelligence",
+        "Research",
+        "Web Application"
+      ],
+
+      status: "Completed",
+      year: "2025–2026",
+
+      summary:
+        "A reinforcement-learning-based aerodynamic shape optimisation project combining surrogate modelling, aerodynamic validation, explainability, and a working web interface.",
+
+      overview:
+        "This capstone project focused on optimising airfoil geometries using reinforcement learning while considering aerodynamic performance and geometric constraints. The study combined model development, validation, explainability analysis, and a web-based interface for presenting results.",
+
+      challenge:
+        "Optimise airfoil geometry while respecting aerodynamic performance requirements and geometric constraints.",
+
+      contribution:
+        "Contributed to the development and evaluation of the reinforcement-learning optimisation framework, explainability analysis of trained policies, result analysis, technical documentation, and integration of project outputs into a working web interface.",
+
+      approach:
+        "The project used CST-based airfoil representation, reinforcement-learning algorithms, hybrid surrogate models, and aerodynamic validation tools. SHAP-based explainability methods were applied to analyse the decisions of trained policies.",
+
+      outputs: [
+        "First place in Ankara University’s Artificial Intelligence and Data Science category.",
+        "Best Student Paper Award at INFUS 2026.",
+        "A working web interface for presenting optimisation and explainability outputs.",
+        "An academic publication presented at INFUS 2026."
+      ],
+
+      technologies: [
+        "Python",
+        "Reinforcement Learning",
+        "PPO",
+        "TD3",
+        "SAC",
+        "Surrogate Modelling",
+        "SHAP",
+        "Web Application"
+      ],
+
+      relatedPublications: [
+        "infus-2026"
+      ],
+
+      relatedAwards: [
+        "infus-2026",
+        "ankara-2026"
+      ],
+
+      relatedPrograms: [
+        "TUSAŞ LIFT UP"
+      ],
+
+      privacyStatus: "Completed academic capstone project",
+
+      featured: true,
+
+      image: "assets/img/projects/airfoil-rl.png",
+      imageAlt: "Airfoil reinforcement learning project cover"
+    },
+
+    {
+      id: "flowtrack",
+      title: "FlowTrack",
+      subtitle: "Project Management Platform",
+
+      categories: [
+        "Full-Stack",
+        "Web Application"
+      ],
+
+      status: "Completed",
+      year: "",
+
+      summary:
+        "A full-stack project management platform for task assignment, progress tracking, team coordination, and Gantt-based project planning.",
+
+      overview:
+        "FlowTrack is a full-stack project management platform developed to bring task assignment, team organisation, progress monitoring, and project scheduling into a unified web-based workflow.",
+
+      challenge:
+        "Help teams organise responsibilities, monitor project progress, and visualise schedules through an accessible management interface.",
+
+      contribution:
+        "Contributed to the development of task-management, progress-tracking, team-management, and Gantt-chart workflows across the Django backend and React frontend.",
+
+      approach:
+        "The platform uses Django for backend application logic, MongoDB for data storage, and React for the user interface. Gantt-chart visualisations support project scheduling and progress monitoring.",
+
+      outputs: [
+        "Task creation and assignment workflows.",
+        "Project progress and team-management features.",
+        "Gantt-based project schedule visualisation."
+      ],
+
+      technologies: [
+        "Django",
+        "MongoDB",
+        "React",
+        "Gantt"
+      ],
+
+      relatedPublications: [],
+      relatedAwards: [],
+      relatedPrograms: [],
+
+      privacyStatus: "Academic full-stack project",
+
+      featured: true,
+
+      image: "assets/img/projects/flowtrack.png",
+      imageAlt: "FlowTrack project management platform cover"
+    },
+
+    {
+      id: "realtime",
+
+      title: "Real-Time Messaging and Calling Application",
+
+      subtitle: "Full-Stack Communication Application",
+
+      categories: [
+        "Full-Stack",
+        "Web Application"
+      ],
+
+      status: "Completed",
+      year: "",
+
+      summary:
+        "A full-stack web application supporting real-time messaging, voice calls, and video calls through browser-based communication technologies.",
+
+      overview:
+        "The application was developed to provide real-time text communication alongside browser-based voice and video calling within a single platform.",
+
+      challenge:
+        "Support real-time messaging and browser-based voice and video communication in one application.",
+
+      contribution:
+        "Developed real-time messaging and calling workflows, server-side communication logic, database integration, and browser-based media communication features.",
+
+      approach:
+        "WebSocket was used for real-time messaging and signalling, while WebRTC supported peer-to-peer voice and video communication. MySQL was used for persistent application data.",
+
+      outputs: [
+        "Real-time messaging.",
+        "Voice calling.",
+        "Video calling.",
+        "Database-backed communication workflows."
+      ],
+
+      technologies: [
+        "Node.js",
+        "JavaScript",
+        "WebSocket",
+        "WebRTC",
+        "MySQL"
+      ],
+
+      relatedPublications: [],
+      relatedAwards: [],
+      relatedPrograms: [],
+
+      privacyStatus: "Academic full-stack project",
+
+      featured: true,
+
+      image: "assets/img/projects/rtc.png",
+      imageAlt:
+        "Real-time messaging and calling application interface",
+
+      imageWidth: 1536,
+      imageHeight: 864
+    },
+
+    {
+      id: "teknofest-bap",
+
+      title:
+        "AI-Based Perception and Position Estimation for Autonomous Aerial Vehicles",
+
+      subtitle:
+        "TEKNOFEST Aviation AI Competition · Ankara University BAP",
+
+      categories: [
+        "Artificial Intelligence",
+        "Computer Vision",
+        "Research",
+        "Ongoing"
+      ],
+
+      status: "Ongoing",
+      year: "2026–Present",
+
+      summary:
+        "An ongoing computer vision project covering aerial object detection and tracking, camera-based position estimation, and reference object detection.",
+
+      overview:
+        "The project is being developed for the TEKNOFEST Aviation AI Competition with support from Ankara University BAP. It addresses three main tasks: UAV and helicopter detection and tracking, camera-based position estimation, and reference object detection.",
+
+      challenge:
+        "Build and validate reliable computer-vision workflows for the competition’s three official tasks.",
+
+      contribution:
+        "Contribute to model integration, inference and evaluation pipelines, performance analysis, output validation, and collaborative development using Git and GitHub.",
+
+      approach:
+        "The project uses Python-based computer vision and model-evaluation workflows. Detailed implementation choices are not disclosed while the competition and research work are ongoing.",
+
+      outputs: [
+        "UAV and helicopter object detection and tracking.",
+        "Camera-based position estimation.",
+        "Reference object detection.",
+        "Ongoing competition and research development."
+      ],
+
+      technologies: [
+        "Python",
+        "Computer Vision",
+        "Object Detection",
+        "Object Tracking",
+        "Position Estimation",
+        "Git",
+        "GitHub"
+      ],
+
+      relatedPublications: [],
+      relatedAwards: [],
+
+      relatedPrograms: [
+        "TEKNOFEST Aviation AI Competition",
+        "Ankara University BAP"
+      ],
+
+      privacyStatus:
+        "Ongoing competition and research project",
+
+      featured: false,
+
+      image: null,
+      imageAlt:
+        "Autonomous aerial vehicles perception project cover"
+    },
+
+    {
+      id: "schedulex",
+      title: "ScheduleX",
+
+      subtitle:
+        "Constraint-Aware University Timetable Management System",
+
+      categories: [
+        "Full-Stack",
+        "Web Application"
+      ],
+
+      status: "Completed",
+      year: "2025",
+
+      summary:
+        "A full-stack web application developed to generate university course schedules while considering classroom capacity, instructor availability, accessibility requirements, course types, and scheduling conflicts.",
+
+      overview:
+        "ScheduleX is a full-stack scheduling application developed to support the creation of university course timetables. The system evaluates institutional and user-defined constraints while assigning courses to appropriate classrooms and time slots.",
+
+      challenge:
+        "Reduce timetable conflicts and improve classroom allocation while considering capacity, accessibility, laboratory requirements, course types, and instructor availability.",
+
+      contribution:
+        "Contributed to the design and development of a team-based university timetable management application.",
+
+      approach:
+        "The system evaluates possible classroom and time-slot combinations, filters assignments that violate defined constraints, scores valid alternatives, and stores the highest-scoring assignment.",
+
+      outputs: [
+        "Automatic course timetable generation.",
+        "Constraint-aware classroom and time-slot assignment.",
+        "Role-based management and scheduling interfaces.",
+        "Conflict reporting for courses that could not be assigned."
+      ],
+
+      technologies: [
+        "Django",
+        "Django REST Framework",
+        "MongoDB",
+        "REST API"
+      ],
+
+      relatedPublications: [],
+      relatedAwards: [],
+
+      relatedPrograms: [
+        "Ankara University Web Design and Programming Course"
+      ],
+
+      privacyStatus: "Academic team project",
+
+      featured: false,
+
+      image: "assets/img/projects/schedulex.png",
+      imageAlt:
+        "ScheduleX university timetable management system cover"
+    },
+
+    {
+      id: "agendax",
+      title: "AjandaX",
+
+      subtitle:
+        "Event and Appointment Management System",
+
+      categories: [
+        "Full-Stack",
+        "Web Application"
+      ],
+
+      status: "Completed",
+      year: "",
+
+      summary:
+        "A calendar-based web application for managing events, appointments, and reminders through an organised scheduling interface.",
+
+      overview:
+        "AjandaX was developed to help users organise events and appointments through calendar-based viewing, editing, and reminder-supported workflows.",
+
+      challenge:
+        "Make events, appointments, and time-management workflows accessible through a single calendar-oriented interface.",
+
+      contribution:
+        "Developed event creation and editing flows, appointment-management workflows, and calendar-based viewing features.",
+
+      approach:
+        "The application uses Django and MongoDB with HTML, CSS, Bootstrap, and JavaScript.",
+
+      outputs: [
+        "Event creation and editing.",
+        "Appointment management.",
+        "Calendar-based viewing.",
+        "Reminder-supported scheduling."
+      ],
+
+      technologies: [
+        "Django",
+        "Python",
+        "MongoDB",
+        "JavaScript",
+        "Bootstrap",
+        "HTML",
+        "CSS"
+      ],
+
+      relatedPublications: [],
+      relatedAwards: [],
+      relatedPrograms: [],
+
+      privacyStatus: "Academic full-stack project",
+
+      featured: false,
+
+      image: "assets/img/projects/agendax.png",
+      imageAlt:
+        "AjandaX event and appointment management interface",
+
+      imageWidth: 1536,
+      imageHeight: 864
+    },
+
+    {
+      id: "attendance",
+
+      title: "Student Attendance Application",
+
+      subtitle:
+        "Web-Based Attendance Management System",
+
+      categories: [
+        "Full-Stack",
+        "Web Application"
+      ],
+
+      status: "Completed",
+      year: "",
+
+      summary:
+        "A Django-based web application developed to manage student attendance records through a simple digital workflow.",
+
+      overview:
+        "The application provides a web-based workflow for recording, reviewing, and managing student attendance information.",
+
+      challenge:
+        "Replace manual attendance-management steps with a clear and maintainable digital workflow.",
+
+      contribution:
+        "Developed the application workflow using Python, Django, and SQLite3.",
+
+      approach:
+        "The system uses Django for application logic and SQLite3 for persistent attendance records.",
+
+      outputs: [
+        "Web-based attendance recording.",
+        "Attendance record review and management.",
+        "Persistent storage through SQLite3."
+      ],
+
+      technologies: [
+        "Python",
+        "Django",
+        "SQLite3",
+        "HTML",
+        "CSS"
+      ],
+
+      relatedPublications: [],
+      relatedAwards: [],
+      relatedPrograms: [],
+
+      privacyStatus: "Academic full-stack project",
+
+      featured: false,
+
+      image: "assets/img/projects/attendance.png",
+      imageAlt:
+        "Student attendance application interface",
+
+      imageWidth: 1536,
+      imageHeight: 864
+    },
+
+    {
+      id: "yazan-zeka",
+
+      title:
+        "Helicopter and UAV Object Detection and Visual Odometry",
+
+      subtitle:
+        "GMKA Yazan Zeka Mentorship Program",
+
+      categories: [
+        "Artificial Intelligence",
+        "Computer Vision",
+        "Research"
+      ],
+
+      status: "Completed",
+      year: "",
+
+      summary:
+        "A computer vision project focused on helicopter and UAV detection together with visual-odometry studies for aerial imagery.",
+
+      overview:
+        "The project explored object detection, aerial-image analysis, and visual-odometry workflows within the GMKA Yazan Zeka Mentorship Program.",
+
+      challenge:
+        "Extract useful object and motion information from aerial imagery.",
+
+      contribution:
+        "Contributed to object-detection experiments, aerial-image analysis, visual-odometry studies, model evaluation, and result analysis.",
+
+      approach:
+        "The project used computer-vision experimentation for aerial object detection and visual-odometry analysis.",
+
+      outputs: [
+        "Helicopter and UAV object-detection studies.",
+        "Visual-odometry experimentation.",
+        "Model evaluation and result analysis."
+      ],
+
+      technologies: [
+        "Python",
+        "Computer Vision",
+        "Object Detection",
+        "Visual Odometry",
+        "Image Processing"
+      ],
+
+      relatedPublications: [],
+      relatedAwards: [],
+
+      relatedPrograms: [
+        "GMKA Yazan Zeka Mentorship Program"
+      ],
+
+      privacyStatus:
+        "Mentorship programme project",
+
+      featured: false,
+
+      image: null,
+      imageAlt:
+        "Helicopter and UAV detection project cover"
+    }
   ],
-  publications:[{id:'ubmk-2025',title:'Comparative Analysis of MLP and Vision Transformers for Video Memorability Classification',authors:'Elif Nur Tekay',venue:'IEEE UBMK',year:'2025',status:'Published',doi:'10.1109/UBMK67458.2025.11207010',relatedProject:'memovision'},{id:'mediaeval-2025',title:'Multimodal Feature Fusion for Video and Brand Memorability',authors:'Elif Nur Tekay',venue:'MediaEval Workshop Proceedings',year:'2025',status:'Published',doi:'',relatedProject:'memovision'},{id:'infus-2026',title:'Reinforcement Learning-Based Airfoil Shape Optimization Using Hybrid Surrogate Models',authors:'Elif Nur Tekay',venue:'INFUS',year:'2026',status:'Presented',doi:'',award:'Best Student Paper Award',relatedProject:'airfoil-rl'}],
-  awards:[{id:'infus-2026',title:'Best Student Paper Award',organization:'INFUS',year:'2026',related:'Reinforcement Learning-Based Airfoil Shape Optimization Using Hybrid Surrogate Models',relatedProject:'airfoil-rl'},{id:'ankara-2026',title:'First Place — Artificial Intelligence and Data Science Category',organization:'Ankara University Informatics Project Market and Career Days',year:'May 2026',related:'Aerodynamic Shape Optimisation Using Reinforcement Learning',relatedProject:'airfoil-rl'},{id:'turkcell-2026',title:'Second Place — Turkcell Yarının Teknoloji Liderleri',organization:'Turkcell',year:'2026',related:'MemoVision · 2nd place among 800 teams',relatedProject:'memovision'}],
-  skills:[{category:'Languages',items:['Python','Java','C/C++','JavaScript','PHP','SQL','HTML','CSS']},{category:'Frontend & web',items:['React','Bootstrap','Responsive Design']},{category:'Backend',items:['Django','Node.js','WebSocket','WebRTC']},{category:'Databases',items:['PostgreSQL','MySQL','MongoDB','SQLite3']},{category:'AI & data',items:['Machine Learning','Deep Learning','Computer Vision','Image Processing','Reinforcement Learning','Explainable AI','GAN','Super-Resolution']},{category:'Engineering tools',items:['Git','GitHub','Docker','Postman','Linux','Google Colab','Visual Studio','VS Code']}],
-  certificates:['Data Analysis School 2025–2026 — AI & Machine Learning Module','Web Development with Django — BTK Academy','C++ Programming — BTK Academy','Java Programming — BTK Academy','Deep Learning Bootcamp','Machine Learning Bootcamps — Akbank and Aygaz','Python Programming 401','White Hat Hacker — Siber Vatan','Introduction to Cybersecurity','Introduction to Linux and Networks — Cisco']
+
+  publications: [
+    {
+      id: "infus-2026",
+
+      title:
+        "Reinforcement Learning-Based Airfoil Shape Optimization Using Hybrid Surrogate Models",
+
+      authors: [
+        "Elif Nur Tekay",
+        "İrem Azra İşleyen",
+        "Mücahit Karaduman",
+        "Sadık Yetkin",
+        "Rukiye Savran Kızıltepe"
+      ],
+
+      venue: "INFUS 2026",
+      year: "2026",
+      status: "Presented",
+
+      award: "Best Student Paper Award",
+
+      link: "",
+      linkLabel: "",
+
+      relatedProject: "airfoil-rl",
+
+      note:
+        "Conference paper produced from the completed TUSAŞ LIFT UP capstone project and presented at INFUS 2026."
+    },
+
+    {
+      id: "mediaeval-2026",
+
+      title:
+        "A CLIP-Based Visual-Semantic Embedding Approach for Commercial Memorability Prediction",
+
+      authors: [
+        "Elif Nur Tekay",
+        "İrem Azra İşleyen",
+        "Rukiye Savran Kızıltepe",
+        "Murat Karakuş"
+      ],
+
+      venue: "MediaEval 2026 Workshop Proceedings",
+      year: "2026",
+      status: "Published",
+
+      award: "",
+
+      link:
+        "https://2026.multimediaeval.com/paper38.pdf",
+
+      linkLabel: "View Paper",
+
+      relatedProject: "memovision",
+
+      note: ""
+    },
+
+    {
+      id: "ubmk-2025",
+
+      title:
+        "Comparative Analysis of MLP and Vision Transformers for Video Memorability Classification",
+
+      authors: [
+        "Elif Nur Tekay",
+        "İrem Azra İşleyen",
+        "Barış Güngör",
+        "Murat Karakuş",
+        "Rukiye Savran Kızıltepe"
+      ],
+
+      venue: "IEEE UBMK 2025",
+      year: "2025",
+      status: "Published",
+
+      award: "",
+
+      link:
+        "https://doi.org/10.1109/UBMK67458.2025.11207010",
+
+      linkLabel: "View DOI",
+
+      relatedProject: "memovision",
+
+      note: ""
+    },
+
+    {
+      id: "mediaeval-2025",
+
+      title:
+        "Multimodal Feature Fusion for Video and Brand Memorability",
+
+      authors: [
+        "Elif Nur Tekay",
+        "İrem Azra İşleyen",
+        "Murat Karakuş",
+        "Rukiye Savran Kızıltepe"
+      ],
+
+      venue: "MediaEval 2025 Workshop Proceedings",
+      year: "2025",
+      status: "Published",
+
+      award: "",
+
+      link:
+        "https://2025.multimediaeval.com/paper39.pdf",
+
+      linkLabel: "View Paper",
+
+      relatedProject: "memovision",
+
+      note: ""
+    }
+  ],
+
+  awards: [
+    {
+      id: "infus-2026",
+
+      title: "Best Student Paper Award",
+
+      organization: "INFUS 2026",
+
+      year: "2026",
+
+      related:
+        "Reinforcement Learning-Based Airfoil Shape Optimization Using Hybrid Surrogate Models",
+
+      relatedProject: "airfoil-rl"
+    },
+
+    {
+      id: "ankara-2026",
+
+      title:
+        "First Place — Artificial Intelligence and Data Science Category",
+
+      organization:
+        "Ankara University Informatics Project Market and Career Days",
+
+      year: "May 2026",
+
+      related:
+        "Aerodynamic Shape Optimisation Using Reinforcement Learning",
+
+      relatedProject: "airfoil-rl"
+    },
+
+    {
+      id: "turkcell-2026",
+
+      title:
+        "Second Place — Turkcell Yarının Teknoloji Liderleri",
+
+      organization: "Turkcell",
+
+      year: "2026",
+
+      related:
+        "MemoVision · Second place among 800 teams",
+
+      relatedProject: "memovision"
+    }
+  ],
+
+  skills: [
+    {
+      category: "Languages",
+
+      items: [
+        "Python",
+        "Java",
+        "C/C++",
+        "JavaScript",
+        "PHP",
+        "SQL",
+        "HTML",
+        "CSS"
+      ]
+    },
+
+    {
+      category: "Frontend & Web",
+
+      items: [
+        "React",
+        "Bootstrap",
+        "Responsive Design"
+      ]
+    },
+
+    {
+      category: "Backend",
+
+      items: [
+        "Django",
+        "Django REST Framework",
+        "Node.js",
+        "WebSocket",
+        "WebRTC"
+      ]
+    },
+
+    {
+      category: "Databases",
+
+      items: [
+        "PostgreSQL",
+        "MySQL",
+        "MongoDB",
+        "SQLite3"
+      ]
+    },
+
+    {
+      category: "AI & Data",
+
+      items: [
+        "Machine Learning",
+        "Deep Learning",
+        "Computer Vision",
+        "Image Processing",
+        "Multimodal Learning",
+        "Reinforcement Learning",
+        "Explainable AI",
+        "GAN",
+        "Super-Resolution"
+      ]
+    },
+
+    {
+      category: "Engineering Tools",
+
+      items: [
+        "Git",
+        "GitHub",
+        "Docker",
+        "Postman",
+        "Linux",
+        "Google Colab",
+        "Visual Studio",
+        "VS Code"
+      ]
+    }
+  ],
+
+  certificates: [
+    "Data Analysis School 2025–2026 — AI & Machine Learning Module",
+    "Web Development with Django — BTK Academy",
+    "C++ Programming — BTK Academy",
+    "Java Programming — BTK Academy",
+    "Deep Learning Bootcamp",
+    "Machine Learning Bootcamps — Akbank and Aygaz",
+    "Python Programming 401",
+    "White Hat Hacker — Siber Vatan",
+    "Introduction to Cybersecurity",
+    "Introduction to Linux and Networks — Cisco"
+  ]
 };
